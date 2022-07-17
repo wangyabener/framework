@@ -1,0 +1,9 @@
+[mysql]
+    host = "127.0.0.1"
+    name = "framework"
+    pass = "yellow"
+    user = "root"
+    port = "3306"
+    connmaxlifetime = 60
+    maxidleconn = 60
+    maxopenconn = 10
