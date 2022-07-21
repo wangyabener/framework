@@ -1,6 +1,8 @@
 package user
 
 import (
+	"framework/internal/app/services/users"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -21,9 +23,7 @@ type detailRequest struct {
 }
 
 func Detail(c *gin.Context) {
-	data := map[string]interface{}{
-		"foo": "bar",
-	}
+	data := users.FindById(c)
 
 	c.JSON(200, data)
 }

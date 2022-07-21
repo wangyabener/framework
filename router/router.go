@@ -13,6 +13,7 @@ func NewHttpServer() *gin.Engine {
 	{
 		v1.GET("/users/:id", user.Detail)
 		v1.GET("/users", user.List)
+		v1.POST("/users", user.Create)
 	}
 
 	return router
